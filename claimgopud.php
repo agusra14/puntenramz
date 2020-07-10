@@ -11,7 +11,7 @@ echo "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 $name = name();
 $email = str_replace(" ", "", $name) . mt_rand(100, 999);
 
-echo "Input MSISDN : ";
+echo "KETIK NOMERNYA DISINI BOSKU : ";
 
 $msisdn = trim(fgets(STDIN));
 $msisdn = str_replace("62","62",$msisdn);
