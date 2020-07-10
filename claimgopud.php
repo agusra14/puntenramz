@@ -1,5 +1,5 @@
 <?php
-// Created by Cygnus7
+// Created by Ramz
 include "function.php";
 
 retry:
