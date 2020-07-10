@@ -18,7 +18,7 @@ function request(
     $header[] = "Connection: keep-alive";
     $header[] = "X-User-Locale: id_ID";
     $header[] = "X-Location: -7.585418,110.832258"; //Solo
-    // "X-Location: 3.5938684,98.6646808"; //Location: Medan
+    // "X-Location: -5.172214,119.465547"; //Location: Makasar
     $header[] = "X-Location-Accuracy: 3.0";
 
     if($pin) {
