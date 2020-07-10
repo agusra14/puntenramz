@@ -6,7 +6,7 @@ echo "\e[96m_________________   WARNING !!!!!!!!  _________________ \n";
 echo "\e[96m          INI SCRIB GOJEK INI GRATIS BRO                \n";
 echo "\e[96m           JADI GUNAKANLAH DENGAN BIJAK                 \n";
 echo "\e[96m          SCRIB INI TIDAK DI JUAL BELIKAN               \n";
-echo "\e[96m              SUBCRIBE CHANNEL YOUTUTBE :               \n";
+echo "\e[96m              SUBCRIBE CHANNEL YOUTUBE :               \n";
 echo "\e[96m                    RAMZ TUTORIAL                       \n";
 echo "\e[96m       BIAR BISA MAKIN SEMANGAT BIKIN KONTENNYA         \n";
 echo "\e[96m ********\e[95m".date('[d-m-Y] [H:i:s]')."\e[96m********\n";
@@ -38,10 +38,10 @@ else
 {
 		echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";	
 		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-		echo "\e[96m[🚫]        \e[91mSCRIPT RAMZ TUTORIAL CHANNEL         \e[96m [🚫]\n";
-	        echo "\e[96m[🚫]           \e[91mKLIK ENTER SAJA BOS KU            \e[96m [🚫]\n";
+		echo "\e[96m[🚫]     \e[91mKUAT LAKONI GAKUAT TINGGAL NGOPI        \e[96m [🚫]\n";
+	        echo "\e[96m[🚫]        \e[91mSPESIAL DOUBLE VOUCHER GOPUD         \e[96m [🚫]\n";
 		echo "\e[96m[🚫]    \e[91mYOK BACA DOA DULU BOSKU AGAR BISA        \e[96m [🚫]\n";
-	        echo "\e[96m[🚫]  \e[91mSELAMAT KELILING INDONESIA BOSKU WKWK.     \e[96m [🚫]\n";
+	        echo "\e[96m[🚫]  \e[91mKALO WORK JANGAN LUPA LIKE AND SUBKREP     \e[96m [🚫]\n";
 		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 goto login;
 }
@@ -92,7 +92,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("nevy","+] TOKE ID : ".$token."\n\n");
         save("token.txt",$token);
-        echo color("nevy","\n▬▬▬▬▬▬▬▬▬▬▬▬* SUROBOYO LOST ANTI SAMBAT *▬▬▬▬▬▬▬▬▬▬▬▬");
+        echo color("nevy","\n▬▬▬▬▬▬▬▬▬▬▬▬* SEDULURAN TANPA BATAS  *▬▬▬▬▬▬▬▬▬▬▬▬");
         echo "\n".color("nevy","# CLAIM VOUCHER GOPUD 1 ");
         echo "\n".color("yellow","# TUNGGU YA ");
         for($a=1;$a<=3;$a++){
