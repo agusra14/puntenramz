@@ -4,7 +4,8 @@ include "function.php";
 
 retry:
 echo "\n";
-echo "              AUTO CLAIM VOUCHER GOFOOD              \n";
+echo "           AUTO CLAIM VOUCHER GOFOOD PART 2          \n";
+echo "            TELE GRUP : t.me/ramztutorial            \n";
 echo "              Created by: Ramz Tutorial              \n";
 echo "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 
