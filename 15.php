@@ -12,12 +12,40 @@ echo "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 $name = name();
 $email = str_replace(" ", "", $name) . mt_rand(100, 999);
 
-echo "ACCES TOKEN : ";
-    ACCES TOKEN :
-    echo "AKSES TOKEN : ";
+echo "KETIK NOMERNYA DISINI BOSKU : ";
+
+$msisdn = trim(fgets(STDIN));
+$msisdn = str_replace("62","62",$msisdn);
+$msisdn = str_replace("(","",$msisdn);
+$msisdn = str_replace(")","",$msisdn);
+$msisdn = str_replace("-","",$msisdn);
+$msisdn = str_replace(" ","",$msisdn);
+
+if(!preg_match('/[^+0-9]/', trim($msisdn))) {
+    if (substr(trim($msisdn),0,3)=='62') {
+        $phone = trim($msisdn);
+    } elseif (substr(trim($msisdn),0,1)=='0') {
+        $phone = '62'.substr(trim($msisdn),1);
+    } elseif (substr(trim($msisdn), 0, 2)=='62') {
+        $phone = '6'.substr(trim($msisdn), 1);
+    } else {
+        $phone = '1'.substr(trim($msisdn),0,13);
+    }
+}
+
+$data = '{"email":"'.$email.'@gmail.com","name":"'.$name.'","phone":"+'.$phone.'","signed_up_country":"ID"}';
+$register = request("/v5/customers", null, $data);
+
+if(strpos($register, '"otp_token"')) {
+    $otptoken = getStr('"otp_token":"','"',$register);
+    
+    echo "---OTP has been sent---\n";
+
+    otp:
+    echo "OTP : ";
     $otp = trim(fgets(STDIN));
     $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"83415d06-ec4e-11e6-a41b-6c40088ab51e"}';
-    $verify = request("/v5/customers/token/verify", null, $data1);
+    $verify = request("/v5/customers/phone/verify", null, $data1);
     
     if(strpos($verify, '"access_token"')) {
         echo "---Register Success Mantab Mantab---\n";
@@ -183,3 +211,8 @@ echo "ACCES TOKEN : ";
         echo "Please Input Correct OTP\n";
         goto otp;
     }
+} else {
+    echo "### Your Number Already Registered ###\n";
+    echo "Please Register again\n";
+    goto retry;
+}
