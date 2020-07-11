@@ -1,6 +1,6 @@
 <?php
 // Created by Ramz
-include "function.php";
+include "function1.php";
 
 retry:
 echo "\n";
