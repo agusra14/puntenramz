@@ -13,12 +13,11 @@ $name = name();
 $email = str_replace(" ", "", $name) . mt_rand(100, 999);
 
 echo "ACCES TOKEN : ";
-
     ACCES TOKEN :
     echo "AKSES TOKEN : ";
     $otp = trim(fgets(STDIN));
     $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"83415d06-ec4e-11e6-a41b-6c40088ab51e"}';
-    $verify = request("/v5/customers/acces/verify", null, $data1);
+    $verify = request("/v5/customers/token/verify", null, $data1);
     
     if(strpos($verify, '"access_token"')) {
         echo "---Register Success Mantab Mantab---\n";
